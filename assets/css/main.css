@@ -287,8 +287,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 45px;
+  margin-right: 12px;
 }
 
 .header .logo h1 {
@@ -306,6 +306,11 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
 }
 
 /*--------------------------------------------------------------
@@ -477,7 +482,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: #2b2b2b;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -693,6 +698,41 @@ h6 {
 
 .footer .footer-links h4 {
   color: #ffffff !important;
+}
+
+.btn-whatsapp-sutil {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px; /* más angosto */
+  background: #25D366;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp-sutil i {
+  font-size: 22px;
+}
+
+.btn-whatsapp-sutil:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .btn-whatsapp-sutil {
+    font-size: 15px;
+    padding: 11px 20px;
+  }
+
+  .btn-whatsapp-sutil i {
+    font-size: 20px;
+  }
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -995,7 +1035,7 @@ section,
 }
 
 .hero .icon-box:hover {
-  background-color: color-mix(in srgb, var(--background-color), white 10%);
+  background-color: #c8a96a;
 }
 
 .hero .icon-box:hover .title a,
