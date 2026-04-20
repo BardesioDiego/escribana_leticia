@@ -367,7 +367,7 @@ h6 {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--nav-hover-color);
+    background-color: #c8a96a;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -672,6 +672,10 @@ h6 {
   margin-bottom: 5px;
 }
 
+.footer .footer-contact h4 {
+   color: #ffffff !important;
+}
+
 .footer .copyright {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -687,6 +691,9 @@ h6 {
   font-size: 13px;
 }
 
+.footer .footer-links h4 {
+  color: #ffffff !important;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -732,7 +739,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #c8a96a;
   width: 44px;
   height: 44px;
   border-radius: 50px;
