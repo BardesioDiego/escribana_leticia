@@ -2,13 +2,13 @@
 /* Fonts */
 :root {
   --default-font: "Poppins", sans-serif;
-  --heading-font: "Montserrat", sans-serif;
+  --heading-font: "Poppins", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #f5f2ec;; /* Background color for the entire website, including individual sections */
   --default-color: #222222; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #172a28; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #008374; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -54,6 +54,7 @@
 :root {
   scroll-behavior: smooth;
 }
+
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -339,7 +340,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: #2b2b2b;
     font-size: 15px;
     padding: 0 2px;
     font-family: var(--nav-font);
@@ -382,7 +383,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-color);
+    color: #2b2b2b;
   }
 
   .navmenu .dropdown ul {
@@ -445,7 +446,7 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: #2b2b2b;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -573,7 +574,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #c8a96a;
   font-size: 14px;
   position: relative;
 }
@@ -856,19 +857,6 @@ section,
   position: relative;
 }
 
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
 .section-title p {
   margin-bottom: 0;
   color: #2b2b2b;
@@ -882,10 +870,6 @@ section,
   color: #2b2b2b;
 }
 
-.section .agenda {
-  color: #c8a96a;
-  font-weight: 600;
-}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -934,21 +918,6 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
-.hero .btn-watch-video {
-  font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  font-weight: 600;
-  color: var(--default-color);
-}
-
-.hero .btn-watch-video i {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
-}
 
 .hero .btn-watch-video:hover i {
   color: var(--default-color);
@@ -987,7 +956,7 @@ section,
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: var(--background-color);
+  background: #1f3a5f;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -1252,8 +1221,8 @@ section,
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  background: #c8a96a;
+  border: 2px solid #d0ab62;
 }
 
 @keyframes pulsate-btn {
@@ -1286,7 +1255,8 @@ section,
 }
 
 .services .service-item .icon i {
-  color: color-mix(in srgb, var(--heading-color), transparent 30%);
+  /* Aplicamos la mezcla con el azul como base predominante */
+  color: color-mix(in srgb, #1f3a5f, #c8a96a 30%);
   font-size: 56px;
   transition: ease-in-out 0.3s;
   z-index: 2;
@@ -1298,9 +1268,11 @@ section,
   content: "";
   height: 100%;
   width: 100%;
-  background: color-mix(in srgb, var(--heading-color), transparent 95%);
+  /* El fondo ahora es el dorado sólido predominante de la imagen */
+  background: #c8a96a; 
   border-radius: 50px;
   z-index: 1;
+  /* Mantenemos tus posiciones originales intactas */
   top: 10px;
   right: -20px;
   transition: 0.3s;
@@ -1327,26 +1299,33 @@ section,
 .services .service-item .readmore {
   margin-top: 15px;
   display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  /* Mezcla de azul predominante para el enlace */
+  color: color-mix(in srgb, #1f3a5f, transparent 30%);
+  font-weight: 600;
 }
 
+/* Al pasar el mouse sobre la tarjeta */
 .services .service-item:hover .icon i {
-  color: var(--heading-color);
+  /* El icono resalta en azul oscuro */
+  color: #1f3a5f;
 }
 
 .services .service-item:hover .icon:before {
-  background: color-mix(in srgb, var(--accent-color), transparent 50%);
+  /* El círculo de fondo se vuelve un dorado más intenso o sólido */
+  background: #c8a96a;
+  opacity: 0.8;
 }
 
 .services .service-item:hover h3 {
-  border-color: color-mix(in srgb, var(--accent-color), transparent 10%);
-  color: var(--heading-color);
+  /* El borde y el título adoptan el azul institucional */
+  border-color: #c8a96a; 
+  color: #1f3a5f;
 }
 
 .services .service-item:hover .readmore {
-  color: var(--accent-color);
+  /* El 'leer más' resalta en dorado para invitar al clic */
+  color: #c8a96a;
 }
-
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -1541,7 +1520,7 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team .member {
-  background-color: var(--surface-color);
+  background-color: #c8a96a;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
   border-radius: 15px;
@@ -1563,44 +1542,14 @@ section,
   margin-top: 16px;
   margin-bottom: 2px;
   font-size: 20px;
+  color: #ffffff; important
 }
 
 .team .member span {
-  font-style: italic;
-  display: block;
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #ffffff;
 }
 
-.team .member .social {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.team .member .social a {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-  transition: 0.3s;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.team .member .social a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
 
 /*--------------------------------------------------------------
 # Pricing Section
@@ -1818,14 +1767,15 @@ section,
   line-height: 0;
   transition: 0.3s;
   cursor: pointer;
+  color: #c8a96a;
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
+  color: #c8a96a;
 }
 
 .faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
+  color: #c8a96a;
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -1837,7 +1787,7 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+  color: #c8a96a;
 }
 
 /*--------------------------------------------------------------
@@ -2850,3 +2800,4 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
