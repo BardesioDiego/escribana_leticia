@@ -990,6 +990,16 @@ section,
   z-index: 4;
 }
 
+.titulo-largo {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .titulo-largo {
+    white-space: normal;
+  }
+}
+
 @media (min-width: 1200px) {
   .hero .icon-boxes:before {
     content: "";
