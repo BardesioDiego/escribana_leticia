@@ -970,6 +970,10 @@ section,
   color: var(--default-color);
 }
 
+.img-rounded{
+  border-radius: 20px;
+}
+
 @media (max-width: 640px) {
   .hero h2 {
     font-size: 36px;
@@ -994,7 +998,7 @@ section,
     left: 0;
     right: 0;
     height: calc(50% + 20px);
-    background-color: var(--default-color);
+    background-color: #f5f2ec;
     border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   }
 }
@@ -1292,6 +1296,7 @@ section,
   padding: 40px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
+  border-radius: 5%;
 }
 
 .services .service-item .icon {
@@ -1790,7 +1795,7 @@ section,
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: #c8a96a;
 }
 
 .faq .faq-container .faq-item .faq-content {
