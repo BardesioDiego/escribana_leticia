@@ -1,20 +1,9 @@
-/**
-* Template Name: Impact
-* Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Poppins", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -71,7 +60,7 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #f5f2ec;
   font-family: var(--default-font);
 }
 
@@ -92,7 +81,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: #1f3a5f;
   font-family: var(--heading-font);
 }
 
@@ -231,7 +220,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #008374;
+  --background-color: #f5f2ec;
   --heading-color: #ffffff;
   color: var(--default-color);
   transition: all 0.5s;
@@ -836,7 +825,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #f5f2ec;
   padding: 60px 0;
   scroll-margin-top: 112px;
   overflow: clip;
@@ -882,6 +871,20 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+  color: #2b2b2b;
+}
+
+.section .asesoria {
+  color: #c8a96a;
+}
+
+.section .text-gris {
+  color: #2b2b2b;
+}
+
+.section .agenda {
+  color: #c8a96a;
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
@@ -916,7 +919,7 @@ section,
 
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background-color: #c8a96a; 
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 14px;
@@ -925,10 +928,8 @@ section,
   padding: 14px 40px;
   border-radius: 50px;
   transition: 0.3s;
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  border: 2px solid #c8a96a; 
 }
-
 .hero .btn-get-started:hover {
   border-color: color-mix(in srgb, var(--default-color), transparent 60%);
 }
