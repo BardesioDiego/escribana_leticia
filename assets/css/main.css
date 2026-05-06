@@ -742,7 +742,7 @@ h6 {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: var(--background-color);
+  background: #c8a96a;
   transition: all 0.6s ease-out;
 }
 
@@ -752,7 +752,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-color: #c8a96a;
   border-radius: 50%;
   width: 60px;
   height: 60px;
