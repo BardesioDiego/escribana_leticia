@@ -478,6 +478,13 @@ h6 {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navmenu > ul > li {
+    width: 100%;
   }
 
   .navmenu a,
@@ -489,8 +496,9 @@ h6 {
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
+    justify-content: flex-start;
+    white-space: normal;
+    width: 100%;
     transition: 0.3s;
   }
 
@@ -716,6 +724,7 @@ h6 {
 
   .footer .footer-about p {
     font-size: 16px;
+    text-align: center;
   }
 }
 
@@ -2930,3 +2939,42 @@ section,
   100% { transform: scale(1); }
 }
 
+@media (max-width: 991px) {
+  /* Asegura que la lista esté centrada eliminando el padding lateral */
+  .footer-links ul {
+    display: inline-block;
+    padding: 0 !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-links li {
+    list-style: none;
+    text-align: center;
+  }
+
+  /* Ajusta la descripción del footer para centrarla en pantallas pequeñas */
+  .footer-about p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* Centrado del bloque del logo y descripción en móvil */
+  footer#footer .footer-about p {
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Centramos las listas que mencionaste antes */
+  footer#footer .footer-links ul {
+    text-align: center !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+}
