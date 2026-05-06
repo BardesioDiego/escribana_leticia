@@ -700,6 +700,25 @@ h6 {
   color: #ffffff !important;
 }
 
+/* Footer responsive improvements */
+@media (max-width: 768px) {
+  .footer .footer-top {
+    padding-top: 60px;
+  }
+
+  .footer .footer-links {
+    margin-bottom: 40px;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+  }
+
+  .footer .footer-about p {
+    font-size: 16px;
+  }
+}
+
 .btn-whatsapp-sutil {
   display: inline-flex;
   align-items: center;
@@ -2910,3 +2929,4 @@ section,
   50% { transform: scale(1.3); }
   100% { transform: scale(1); }
 }
+
