@@ -713,6 +713,28 @@ h6 {
     padding-top: 60px;
   }
 
+  .footer .footer-top .row {
+    justify-content: center;
+  }
+
+  .footer .footer-top .footer-about,
+  .footer .footer-top .footer-links,
+  .footer .footer-top .footer-contact {
+    text-align: center;
+  }
+
+  .footer .footer-contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center !important;
+  }
+
+  .footer .footer-contact .contact-info p {
+    justify-content: center;
+  }
+
   .footer .footer-links {
     margin-bottom: 40px;
   }
